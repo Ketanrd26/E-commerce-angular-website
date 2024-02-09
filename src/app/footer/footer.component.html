@@ -1,0 +1,398 @@
+<style>
+
+    .reviews{
+        height: 70vw;
+        width: 100%;
+        background-color: lightgray;
+    }
+    .cliet-revies {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 30px;
+    }
+
+    .first {
+        height: 28vw;
+        width: 384px;
+        background-color: white;
+        border: 1px solid black;
+        padding: 30px 30px;
+    }
+
+    .text {
+
+        overflow: hidden;
+    }
+
+    #h3 {
+        text-transform: capitalize;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        align-items: center;
+        text-align: center;
+        padding-top: 50px;
+    }
+
+
+    .cliet-revies h3 {
+        font-size: 15px;
+        text-transform: capitalize;
+        text-align: center;
+        color: red;
+    }
+
+    .author {
+        text-transform: uppercase;
+        font-size: 13px;
+        letter-spacing: 0.5px;
+        font-weight: 500;
+        text-align: center;
+        align-items: center;
+        padding: 0 70px;
+    }
+
+
+    .second{
+        height: 20vw;
+        width: 390px;
+        background-color: white;
+        border: 1px solid black;
+        padding: 30px 30px;
+    }
+    .third{
+        height: 40vw;
+        width: 390px;
+        background-color: white;
+        border: 1px solid black;
+        padding: 30px 30px;
+    }
+    .fourth{
+        height: 22vw;
+        width: 390px;
+        background-color: white;
+        border: 1px solid black;
+        padding: 30px 30px;
+    }
+
+    @media screen and (max-width:1500px){
+        .first{
+            height: 50vw;
+        }
+    }
+
+
+    @media screen and (max-width:1500px){
+        .second{
+            height:40vw;
+        }
+    }
+    @media screen and (max-width:1500px){
+        .third{
+            height: 60vw;
+        }
+    }
+
+    @media screen and (min-width:500px){
+        .third{
+            overflow: hidden;
+        }
+        
+    }
+    @media screen and (max-width:1500px){
+        .fourth{
+            height: 40vw;
+        }
+    }
+    .cards{
+        display: flex;
+    }
+
+    .card-item{
+            height: 450px;
+            width: 500px;
+          
+            position: relative;
+    }
+
+    .card-img{
+          height: 100%;
+          width: 100%;
+          overflow: hidden;
+         
+
+    }
+
+    .card-body{
+        width: 100%;
+        height: 100%;
+        top: 0;
+        right: 0;
+        opacity: 0;
+        transition: .5s;
+        display: flex;
+          justify-content: center;
+          align-items: center;
+        position: absolute;
+        background-color: rgba(0, 0, 0, .4);
+        backdrop-filter: blur(5px);
+        overflow: hidden;
+        
+    }
+
+    .card-body a, ul {
+        color: rgba(255,255,255,.8);
+    }
+
+      .card-img-1, :hover  .card-body{
+        opacity: 1;
+      }
+
+
+     ul li{
+        text-decoration: none;
+        padding: 0 10px;
+        font-size: 30px;
+    }
+    
+
+    .table, .r, .l {
+        padding: 0 40px;
+       
+        color: gray;
+    }
+   .table , .shop, h4{
+    font-size: 15px;
+   }
+
+   .right h3{
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+   }
+
+   .right h4:hover{
+    color: red;
+   }
+
+
+#footer{
+    padding: 0 50px;
+}
+input{
+    width: 20vw;
+    height: 2vw;
+    border: 1px solid red;
+}
+button{
+    width: 5vw;
+    height: 2vw;
+    background: transparent;
+    border: 1px solid red;
+}
+
+button:hover{
+    background-color: red;
+    color: white;
+    animation-fill-mode: forwards;
+    animation-direction: alternate-reverse;
+    animation-timing-function: ease-in;
+}
+.icons i {
+    padding: 0 10px;
+    color: gray;
+}
+.icons :hover{
+    color: red;
+}
+        
+    
+</style>
+
+
+
+
+<!-- customer revies -->
+
+<div class="reviews">
+    <h3 id="h3">client reviews</h3>
+
+    <div class="cliet-revies">
+        <div class="first">
+            <h3>Customer support</h3>
+            <div class="text">
+                *Envato Really need to add 10 more reasons, such as Love, Perfection, Caretakers, awesome people". The
+                word
+                Customer Support just doesn't justify,
+                I've been a member of Envato for ages, myself a designer of Wordpress for over 12 years. Recently
+                decided to
+                start my project on Shopify, was scared, worried and you name it, it was in that position, but these
+                guys,..... they nailed it, their support. Truth to be told, I don't know anyone else from there apart
+                from
+                Sejal, she's a darling and a rockstar, a beautiful soul.
+                I've worked with supports and various teams before, but this one, SEJAL, wowwwwww....... she's like your
+                Godfather.... she won't let you down...
+                Love this theme. love their work, love their approach to it, loved their support.
+                Long story short, they're the best. PERIOD.
+                Much Love
+                xoxo xoxo
+                <br>
+
+            </div>
+            <span class="author"> demynl - Demy Rink </span>
+         
+        
+
+
+        </div>
+
+        <div class="second">
+            <h3> Customizability </h3>
+            <div class="text">
+                I've had used a myriad of Shopify themes over the years, and AVONE is simply the best. Every feature and option you would want in a theme, AVONE has it. More particularly, on the product page, which is the most important page, you have a chockful of sexy and critical options to make your product page standout with a flair. In short, I can't uncover a feature or option the theme doesn't have. Furthermore, customer service is fast, swift and extremely helpful. East five stars!!!
+            </div>
+            <span class="author" style="font-size: 10px;"> bimmerfanatic -bimmer fanatic </span>
+        </div>
+        <div class="third">
+            <h3> Customizability </h3>
+            <div class="text">
+                I've been through the trenches, i've suffered through all the shady freelancers pretending to be web developers, i've build multiple stores with expensive, limited and f***** buggy themes with the worst support ever.
+                But now...
+                I cant f**** believe it (excuse my french).
+                I launch my store 2 days ago, and i kid you not, i've not been able to stop smiling. This is true happiness from within - or from this theme. This theme... omg. it got it all. dont even know where to start. I have a relatively close relationship to one of the greatest webdesign/developer business in my country, and i kid you not, this function and looks exactly like a $20.000 website. I was actually just about to collab with this company, so one might say that the Avone theme saved my $19.920 (THANK YOU!)
+                Actually forget all about the customization, and the f***** beautifully features and designs, because the support team.....
+                I litteraly just through my Out of the sandbox, Flex theme, right in the junk drawer ($450 theme), because it was extremely limited, and the customer support took YEEAARS (apperently they have had a high demand of request since december 2020 - yeah right - lazy ass support) BUUUUT with Avone! Today i have received support from this amazing support agent, Sejal! 
+                
+            </div>
+            <span class="author" style="font-size: 8px;"> Alekbk - Alexander Knakkergaard,   </span>
+        </div>
+        <div class="fourth">
+            <h3>Customer support</h3>
+            <div class="text">
+                First time trying this theme and LOVE IT. The documentation is a breeze to follow and the times we got stuck, I pinged support and in my opinion, they went above and beyond. They walked me through solutions and even made code updates on my behalf. I'm going on over a month using this theme now and have had nothing but compliments from customers. It's fast, easy to edit, flexible, and looks great on mobile and desktop. I definitely recommend you guys check them out and give their theme a chance - you won't regret it. If you want to poke around the site I made with it check out www.igetbutterflies.com - thanks!
+            </div>
+            <span class="author">  Kirkusm - Kirk Deis  </span>
+        </div>
+    </div>
+</div>
+
+<!-- image-cards -->
+
+<div class="cards">
+ <a href="#" class="card-item">
+   
+    <img src="../../assets/card1.jpg" alt=""  class="card-img">
+    <div class="card-body">
+        <ul class="d-flex " style="list-style-type: none;">
+            <li class="comment text-light" >234
+                <i class="bi bi-chat"></i>
+            </li>
+            <li class="like text-light" >135
+                <i class="bi bi-heart"></i>
+            </li>
+        </ul>
+    </div>
+ </a>
+ <a href="#" class="card-item">
+   
+    <img src="../../assets/card2.jpg" alt=""  class="card-img">
+    <div class="card-body">
+        <ul class="d-flex " style="list-style-type: none;">
+            <li class="comment text-light" >234
+                <i class="bi bi-chat"></i>
+            </li>
+            <li class="like text-light" >135
+                <i class="bi bi-heart"></i>
+            </li>
+        </ul>
+    </div>
+ </a>
+ <a href="#" class="card-item">
+   
+    <img src="../../assets/card3.jpg" alt=""  class="card-img">
+    <div class="card-body">
+        <ul class="d-flex " style="list-style-type: none;">
+            <li class="comment text-light" >234
+                <i class="bi bi-chat"></i>
+            </li>
+            <li class="like text-light" >135
+                <i class="bi bi-heart"></i>
+            </li>
+        </ul>
+    </div>
+ </a>
+ <a href="#" class="card-item">
+   
+    <img src="../../assets/crad4.jpg" alt=""  class="card-img">
+    <div class="card-body">
+        <ul class="d-flex " style="list-style-type: none;">
+            <li class="comment text-light" >234
+                <i class="bi bi-chat"></i>
+            </li>
+            <li class="like text-light" >135
+                <i class="bi bi-heart"></i>
+            </li>
+        </ul>
+    </div>
+ </a>
+</div>
+
+<div class="reviews d-flex justify-content-around pt-5" id="footer">
+    <div class="row">
+        <div class="col-md-6">
+    <div class="left">
+        <h3 class="text-capitalize">subscribe</h3>
+        <p>subscribe us and you wan't miss the new arrivals , as well as discounts and sales</p>
+        <input type="email" placeholder="abc@gmail.com">
+        <button>send</button>
+
+        <br><br><br><br><br><br>
+        <h2 class="text-uppercase">stay in touch</h2>
+        <div class="icons">
+            <a href="">
+                <i class="bi bi-facebook"></i>
+            </a>
+            <a href="">
+                <i class="bi bi-twitter"></i>
+            </a>
+            <a href="">
+                <i class="bi bi-instagram"></i>
+            </a>
+            <a href="">
+                <i class="bi bi-youtube"></i>
+            </a>
+        </div>
+    </div>
+        
+    </div>
+    <div class="col-md-6">
+    <div class="right">
+        <h3 class="text-uppercase" style="padding-left: 30px;">info</h3>
+        <div class="table d-flex" style="padding-top: 50px;" >
+            <div class="r">
+                <h4 class="text-capitalize">contacts</h4>
+                <h4 class="text-capitalize">exchange</h4>
+                <h4 class="text-capitalize">returns</h4>
+            </div>
+            <div class="l">
+                <h4  class="text-uppercase">faq</h4>
+                <h4 class="text-capitalize">shipping + headings</h4>
+                <h4 class="text-capitalize">2022 catlog</h4>
+                <h4 class="text-capitalize">search</h4>
+            </div>
+        </div>
+        <h3 class="text-uppercase" style="padding-left: 30px;">shop</h3>
+        <div class="shop d-flex"  style="padding-top: 50px; padding-left: 40px;">
+            
+            
+            <div class="l ">
+                <h4 class="text-capitalize">road bike</h4>
+                <h4 class="text-capitalize">mountain bike</h4>
+                <h4 class="text-capitalize">bmx bike</h4>
+            </div>
+            <div class="r">
+                <h4 class="text-capitalize">city bike</h4>
+                <h4 class="text-capitalize">sport bike</h4>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>

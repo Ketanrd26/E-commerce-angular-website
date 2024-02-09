@@ -1,0 +1,40 @@
+/* input{
+    width: 33vw;
+    height: 2vw;
+    border: 1px solid blue;
+    
+    
+}
+label{
+    text-transform: capitalize;
+    color: white;
+    font-weight: bold;
+}
+.container-fluid{
+    padding: 0;
+}
+
+#form{
+    height: 20.05vw;
+    width: 40vw;
+    padding: 100px 59px;
+    
+    background-image: linear-gradient(0deg, rgba(1, 1, 1, 0.3), rgba(1, 1, 1, 0.6)), url(../../assets/bg1.jpg);
+    backdrop-filter: blur(100px);
+    -webkit-backdrop-filter: blur(100px);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+button{
+   margin: 0px 241px;
+  
+   cursor: pointer;
+}
+
+button:hover{
+    background-color: black;
+    color: white;
+
+} */

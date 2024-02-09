@@ -1,0 +1,235 @@
+<style>
+    html,
+    body {
+        height: 100%;
+        width: 100%;
+    }
+
+
+
+
+    .container {
+        height: 50vw;
+        width: 100%;
+        background-image: linear-gradient(0deg, rgba(1, 1, 1, 0.3), rgba(1, 1, 1, 0.6)), url(../../assets/bg2.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        
+        
+
+
+
+
+
+    }
+
+    #logo{
+        position: relative;
+        right: -100%;
+        -webkit-animation: slide 1.5s forwards;
+        -webkit-animation-delay: 2s;
+        animation: slide 1.5s forwards;
+        animation-delay: 2s;
+    }
+
+    @-webkit-keyframes slide{
+        100% {right:0;}
+    }
+
+    @keyframes slide{
+        100% {right:0;}
+    }
+
+    button {
+        height: 42px;
+        width: 149px;
+        background-color: transparent;
+        border: 1px solid white;
+        border-radius: 30px;
+        
+        cursor: pointer;
+       margin-left: 150px;
+    }
+
+    #trio{
+        height: 600px;
+        width: 600px;
+        margin-top:200px;
+        
+    }
+    #right img  {
+        padding-left: 250px;
+       
+        
+    }
+
+    #p{
+        padding-top: 30px ;
+        ;
+    }
+  @media(max-width:2500px){
+    .container{
+        width: 2500px;
+    }
+   
+  
+  }
+
+  .sidebar{
+    background-color: BLACK;
+    height: 25vw;
+    width: 15vw;
+    color: red;
+    text-transform: capitalize;
+    font-weight: bold;
+  }
+
+  @media (min-width:1400px){
+    .containers{
+        max-width: 1644px;
+    }
+  }
+
+  @media screen and (max-width:1300px) {
+    #trio{
+        height: 500px;
+        width: 500px;
+        margin-top: 0;
+        padding-right: 50px;
+    }
+  }
+
+  @media screen and (max-width:500px) {
+    #side{
+        margin-left: 0;
+        margin-right: 0;
+    }
+  }
+  
+ 
+</style>
+
+
+
+
+
+
+
+<div class="mid-container " id="mid-container">
+    <div class="container ">
+        <div class="row">
+        <div class="col-md-4" style="padding-top: 250px;">
+            <img src="../../assets/trio.png" alt="" height="1000vw" class="ps-5 ms-4 " id="trio">
+        </div>
+        <div class="col-md-8 " style="padding-top: 300px;" id="right" >
+            <img src="../../assets/logo.png" alt="" height="100vw" class="mt-5" id="logo">
+            <h3 class="text-capitalize text-light text-bold" style="margin-top: -25px; padding-left: 250px;">Try the Bikes And Enjoy our day
+            </h3>
+            <br>
+            <button class="btn text-capitalize text-bold text-light"  >book first trial</button>
+            <button class="btn text-capitalize text-bold text-light"  >give rating</button>
+
+            <p class="text-center text-light " id="p">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Fugiat,
+                reprehenderit?<br>
+                Lorem ipsum, dolor sit amet consectetur adipisicing. <br>
+                Lorem, ipsum dolor.</p>
+        </div>
+    </div>
+    </div>
+</div>
+
+
+<div class="item d-flex justify-content-around" style="padding-top: 250px; padding-bottom: 50px;">
+    <div class="card" style="width: 18rem;">
+        <img src="../../assets/bike3.png" class="card-img-top" alt="" (click)="toggle()">
+        <div class="card-body" [@openclose]="isOpen ? 'open' : 'close'">
+            <h3 class="text-capitalize" id="name">yamhaha r15 1500cc</h3>
+            <div *ngIf="isOpen">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    <br>Soluta, minima.
+                </p>
+                <a href="#">book a bike</a>
+            </div>
+        </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+            <img src="../../assets/bike2.png" class="card-img-top" alt="" (click)="toggle()">
+            <div class="card-body" [@openclose]="isOpen ? 'open' : 'close'">
+                <h3 class="text-capitalize" id="name">yamhaha r15 1500cc</h3>
+                <div *ngIf="isOpen">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        <br>Soluta, minima.
+                    </p>
+                    <a href="#">book a bike</a>
+                </div>
+            </div>
+    </div>
+
+
+
+    <div class="card" style="width: 18rem;">
+        <img src="../../assets/yamha 1.png" class="card-img-top" alt="" (click)="toggle()">
+        <div class="card-body" [@openclose]="isOpen ? 'open' : 'close'">
+            <h3 class="text-capitalize" id="name">yamhaha r15 1500cc</h3>
+            <div *ngIf="isOpen">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    <br>Soluta, minima.
+                </p>
+                <a href="#">book a bike</a>
+            </div>
+        </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+        <img src="../../assets/bike3.png" class="card-img-top" alt="" (click)="toggle()">
+        <div class="card-body" [@openclose]="isOpen ? 'open' : 'close'">
+            <h3 class="text-capitalize" id="name">yamhaha r15 1500cc</h3>
+            <div *ngIf="isOpen">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    <br>Soluta, minima.
+                </p>
+                <a href="#">book a bike</a>
+            </div>
+        </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+        <img src="../../assets/bike3.png" class="card-img-top" alt="" (click)="toggle()">
+        <div class="card-body" [@openclose]="isOpen ? 'open' : 'close'">
+            <h3 class="text-capitalize" id="name">yamhaha r15 1500cc</h3>
+            <div *ngIf="isOpen">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    <br>Soluta, minima.
+                </p>
+                <a href="#">book a bike</a>
+            </div>
+        </div>
+    </div>
+    
+
+</div>
+<app-book-ride></app-book-ride>
+<br><br>
+<div class="containers" style="margin: 0 auto;" id="side">
+    <div class="row">
+        <div class="col-md-3" >
+            <div   class="sidebar" style="padding-left: 60px; padding-top: 30px;">
+                <a routerLink="/body/yamaha" class="w3-bar-item w3-button">yamaha</a> <br>
+                <a href="#" routerLink="/body/royle-enfeild" class="w3-bar-item w3-button">royle-enfeild</a> <br>
+                <a href="#" routerLink="/body/pulsar"  class="w3-bar-item w3-button">pulsar</a> <br>
+                <a href="#" routerLink="/body/tvs"  class="w3-bar-item w3-button">tvs</a>
+              </div>
+        </div>
+        
+        <div class="col-md-9 ">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>
+<br><br>
+<app-timelapse></app-timelapse>
+
+
+<hr>
+
+<app-footer></app-footer>

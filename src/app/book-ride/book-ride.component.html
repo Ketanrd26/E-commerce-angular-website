@@ -1,0 +1,47 @@
+<style>
+.container-fluid {
+    display: flex;
+    justify-content: space-around;
+    padding:  0  80px;
+    flex-shrink: inherit;
+    
+}
+.row{
+    flex-wrap: nowrap;
+}
+</style>
+
+
+
+
+
+
+<div class="field" style="margin-top: 120px;  margin-right: 150px;">
+<div class="container-fluid">
+    <div class="row" >
+        <div class="col-md-6" style="width: 40%; margin: 0;">
+            <div   id="form">
+           <form  class="form " [formGroup]="rideForm"         (ngSubmit)="onSubmitRideForm(rideForm)">
+           
+          <label for="">name:</label>
+          <input type="text" class="form-control" formControlName="name">
+          <br>
+          <label for="">Contact No. :</label>
+          <input type="number" class="form-control" formControlName="contact">
+          <br>
+          <label for="">Trail Date :</label>
+          <input type="date" class="form-control">
+           </form>
+           <button class="btn btn-danger mt-2" type="submit">Book A ride</button>
+        </div>
+        </div>
+        <div class="col-md-6" height="385rem">
+            <img src="../../assets/sidewall.jpg" alt="" height="385rem" style="width: 800px; margin: 0;">
+        </div>
+     
+    </div>
+   
+</div>
+
+
+</div>

@@ -1,0 +1,104 @@
+
+<style>
+    .container{
+        max-width: 100%;
+        padding: 0;
+       
+        top: 0;
+        padding: 0;
+    }
+    .container nav {
+        
+        width: 100%;
+        background-color: black;
+        padding: 0;
+        z-index: 1000;
+         
+         
+        display: flex;
+        justify-content: space-around;
+
+    }
+
+    .right ul {
+        display: flex;
+        list-style-type: none;
+        padding: 28px 0;
+        color: white;
+        text-transform: capitalize;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+    }
+
+    .right ul li {
+
+
+        padding: 0 20px;
+    }
+
+    .container img {
+        height: 92px;
+        width: 209px;
+    }
+    @media(max-width:2500px){
+        nav{
+            height: 100px;
+            align-items: center;
+            align-self: center;
+            display: flex;
+            
+            
+            
+            
+        }
+
+        
+      
+        .right{
+            margin-right: 556px;
+        }
+        @media (max-width:5000px) {
+            .right{
+                margin-right: 0;
+            }
+            
+        }
+    }
+
+    
+</style>
+
+
+
+
+
+
+
+
+
+
+
+<div class="container " id="container">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolled align-content-center">
+        <div class="left ">
+            <img src="../../assets/logo.png" alt="">
+        </div>
+        <div class="right">
+            <ul>
+                <li>
+                    <a href="#" routerLink="body" style="text-decoration: none;" class="text-light"> home</a>
+                </li>
+                <li class="text-danger">
+                    <a href="#" routerLink="products" style="text-decoration: none;" class="text-danger">products</a>
+                </li>
+                <li>pages</li>
+                <li class="text-danger">
+                    <a href="#" routerLink="bookRide" style="text-decoration: none;" class="text-danger">Book Our First Ride</a>
+                </li>
+                <li>
+                    <a href="#" routerLink="aboutUs" style="text-decoration: none;" class="text-light">about us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
